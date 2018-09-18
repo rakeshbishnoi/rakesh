@@ -1,0 +1,12 @@
+print("# print my name")
+print("Rathi.J")
+print("# add two numbers")
+a=float(input("enter a value"))
+b=float(input("enter b value"))
+sum=a+b
+print(sum," is the total")
+print("# subtract two numbers")
+a=float(input("enter a value"))
+b=float(input("enter b value"))
+sum=a+b
+print(sum," is the total")
