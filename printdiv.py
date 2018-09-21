@@ -2,4 +2,4 @@
 a=int(input("enter a value of a:"))
 b=int(input("enter a value of b:"))
 divide=a/b
-print(a/b)/2
+print(a/b)
