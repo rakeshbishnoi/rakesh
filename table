@@ -1,0 +1,6 @@
+#to ask the user for a number 
+#print the table of that num till 20
+a=int(input("enter a number"))
+while(n+1,n<=20):
+	b=a*n
+print(b)

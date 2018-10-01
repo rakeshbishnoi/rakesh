@@ -1,4 +1,4 @@
-print("# to find your grade ")
+print("# motivator ")
 a=float(input("enter your marks"))
 if(a>=85):
 	print("your grade is A. CONGRADULATIONS!!!!!")
