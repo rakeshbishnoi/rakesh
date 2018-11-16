@@ -1,38 +1,75 @@
+import random
 
-a=['1','2','3','4','5','6','7','8','9']
+board = [" "," "," "," "," "," "," "," "," "," "]
 
-def printBoard():
-	print(a[0]+'|'+a[1]+'|'+a[2])
-	print("------")
-	print(a[3]+'|'+a[4]+'|'+a[5])
-	print("------")
-	print(a[6]+'|'+a[7]+'|'+a[8])
-printBoard()
 
-ply1 Turn = True
+def print_board():
+    print("       |             |       ")
+    print("       |             |       ")
+    print("    ",board[1],"| ","    ",board[2],"    | ",board[3])
+    print("=============================")
+    print("       |             |       ")
+    print("       |             |       ")
+    print("    ",board[4],"| ","    ",board[5],"    | ",board[6])
+    print("=============================")
+    print("       |             |       ")
+    print("       |             |       ")
+    print("    ",board[7],"| ","    ",board[8],"    | ",board[9])
+    print("=============================")
+    print("       |             |       ")
+    print("       |             |       ")
 
-for i in range(9):
-printBoard()
-#ply1 plays
-	if ply1 Turn:
-		p = input("ply1,choose ur place:")
-		if p in a:
-			a[int(p)-1] = 'X'
-			ply1 Turn = not ply1 Turn
-#ply2 plays
-	else:
-		p = input("ply2, choose ur place:")
-		if p in a:
-			a[int(p)-1] = 'O'
-			ply2 Turn = not ply2 Turn
 
-check for winning condition
-if(a=0)
+# x player 
 
-print(a[0],a[1],a[2]) or (a[3],a[4],a[5]) or (a[6],a[7],a[8])
-print(a[0],a[3],a[6]) or (a[1],a[4],a[7]) or (a[2],a[5],a[8])
-print(a[0],a[4],a[8]) or (a[2],a[4],a[6])
+while True:
+    print_board()
+    choice_x = int(input("please chose an empty slot for 'X'"))
+    
+    if(board[choice_x] == ' '):
+        board[choice_x] ='x'
+        print_board()        
 
-#check for tie condition
-elif(a=9):
-print("tie")
+    elif(board[1]=='x' and board[2]== 'x' and board[3]=='x'or
+    board[4]=='x' and board[5]== 'x' and board[6]=='x'     or 
+    board[7]=='x' and board[8]== 'x' and board[9]=='x'     or 
+    board[1]=='x' and board[4]== 'x' and board[7]=='x'     or 
+    board[2]=='x' and board[5]== 'x' and board[8]=='x'     or 
+    board[3]=='x' and board[6]== 'x' and board[9]=='x'     or 
+    board[1]=='x' and board[5]== 'x' and board[9]=='x'     or 
+    board[3]=='x' and board[5]== 'x' and board[7]=='x'):
+        print("x wins!!!")
+        exit()
+
+    else:
+        print("sorry please select an empty slot for 'X'")
+
+    choice_y = int(input("please chose an empty slot for 'o'"))
+    if(board[choice_y] == ' '):
+        board[choice_y] ='o'
+        print_board()
+
+    #cheack for o win  
+    elif(board[1]=='o' and board[2]== 'o' and board[3]=='o' or 
+        board[4]=='o' and board[5]== 'o' and board[6]=='o'  or 
+        board[7]=='o' and board[8]== 'o' and board[9]=='o'  or 
+        board[1]=='o' and board[4]== 'o' and board[7]=='o'  or 
+        board[2]=='o' and board[5]== 'o' and board[8]=='o'  or 
+        board[3]=='o' and board[6]== 'o' and board[9]=='o'  or 
+        board[1]=='o' and board[5]== 'o' and board[9]=='o'  or 
+        board[3]=='o' and board[5]== 'o' and board[7]=='o'):
+        print_board()
+        print("o wins!!!")
+        exit()
+           
+    else:
+        print("sorry please select an empty slot for 'o'")
+
+   
+
+
+
+
+
+
+    

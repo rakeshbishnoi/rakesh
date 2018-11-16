@@ -1,14 +1,10 @@
-#program to check greater of 2 numbers
-#input a from keyboard
-a=int(input("enter value of A:"))
-# input b from keyboard
-b=int(input("enter value of B:"))
-#print value of a
-print("A:",a)
-#print value of b
-print("B:",b)
+#find greater number
+x = int(input("value of x :") )
+y = int(input("value of y :") )
 
-if (a>b):
-	print(a,"is greater")
+
+if (x > y):
+	print("x is the largest number ")
 else:
-	print(b,"is greater")
+	print("y is the greatesrt mnumber")
+

@@ -1,9 +1,6 @@
-import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as P
 
-# evenly sampled time at 200ms intervals
-t = np.arange(0., 5., 0.2)
-
-# red dashes, blue squares and green triangles
-plt.plot(t, t, 'r--', t, t**2, 'bs', t, t**3, 'g^')
-plt.show()
+a = ['eat','sleep','code','repeat']
+b = [1,2,3,4]
+P.pie(b, labels = a, colors=['red','blue','green','yellow'],startangle=90, shadow = True, explode = (0, 0, 0.1, 0),radius = 1.2, autopct = '%1.1f%%')
+P.show()

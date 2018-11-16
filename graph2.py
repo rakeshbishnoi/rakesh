@@ -1,23 +1,9 @@
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as p
 
-# x-coordinates of left sides of bars
-left = [1,2,3,4,5]
-
-# height of bars
-height = [10,24,36,40,5]
-
-# labels for bars
-tick_label = ['one','two','three','four','five']
-
-# plotting a bar chart
-plt.bar(left,height, tick_label = tick_label,
-	width = 0.8, color = ['orange','yellow'])
-
-# naming the x-axis
-plt.xlabel('x - axis')
-# naming the y-axis
-plt.ylabel('y - axis')
-# plot title
-plt.title('My bar chart!!!!')
-# fun to show the plot
-plt.show()
+xaxis=[1,2,3,4,5]
+yaxis=[10,24,36,40,5]
+p.bar(xaxis,yaxis,tick_label=['one','two','three','four','five'],width = 0.8,color = ['blue','green'])
+p.xlabel('x axis')
+p.ylabel('y axis')
+p.title('my 2nd graph !')
+p.show()
